@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget30"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    android:weightSum="1">
+
+	<TextView
+		android:id="@+id/widget29"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="TCP client demo" >
+	</TextView>
+
+	<LinearLayout
+		android:id="@+id/widget41"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+
+		<TextView
+			android:id="@+id/TVhostname"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Hostname: " >
+		</TextView>
+
+		<EditText
+			android:id="@+id/EThostname"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="k2.cs.uwyo.edu"
+			android:textSize="18sp" >
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/widget42"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+
+		<TextView
+			android:id="@+id/TVport"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="port: " >
+		</TextView>
+
+		<EditText
+			android:id="@+id/ETport"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="3012"
+			android:textSize="18sp" >
+		</EditText>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/makeconn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:padding="10px"
+		android:text="THE BUTTON" >
+	</Button>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="output: "
+android:gravity="bottom|left">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false"
+        android:foregroundGravity="bottom"
+        android:layout_gravity="bottom">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:measureWithLargestChild="false"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     *     "
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;"
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:id="@+id/button3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="^"
+                android:id="@+id/button8" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   SCAN   "
+                android:id="@+id/button7" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="v"
+                android:id="@+id/button9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     *     "
+                android:id="@+id/button4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/button5" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:id="@+id/button6" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fireBoard"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.24"
+        android:visibility="gone" />
+
+</LinearLayout>
